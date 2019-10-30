@@ -1,0 +1,53 @@
+header{
+    height: 400px;
+}
+.docs{
+    font-size: 20px
+}
+.jumbotron{
+    background: none;
+    min-height: 200px;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+
+.display-4 a{
+    color:#005D3F;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 15px;
+    display: inline-block;
+	outline: none;
+	letter-spacing: 1px;
+	// font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+     padding: 0 20px;
+	height: 45px;
+    line-height: 45px;
+    padding-bottom: 5px;
+}
+    
+.display-4 a:after {
+    background-color: #7B4404;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.display-4 a:hover:after,
+.display-4 a:focus:after {
+    width: 100%;
+}
+
+
+
+
+
+

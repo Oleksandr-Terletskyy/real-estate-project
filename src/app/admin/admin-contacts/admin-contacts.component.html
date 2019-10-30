@@ -1,0 +1,30 @@
+<div>
+  <h1 class="customers">
+    List of clients
+  </h1>
+  <hr>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">phone</th>
+        <th scope="col">email</th>
+        <th scope="col">message</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cont of contact; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{cont.name}}</td>
+        <td>{{cont.phone}}</td>
+        <td>{{cont.email}}</td>
+        <td>{{cont.message}}</td>
+        <td>
+            <button class="btn btn-dark" (click)="onDelete(cont.id)">Delete</button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

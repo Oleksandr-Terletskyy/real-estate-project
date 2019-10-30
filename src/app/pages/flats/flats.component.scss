@@ -1,0 +1,45 @@
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+polygon {
+  opacity: 0;
+  fill: white;
+  transition: 0.3s;
+  outline: none;
+}
+polygon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.choose_floor {
+  width: 100%;
+}
+.choose_floor1 {
+  display: none;
+  height: 100vh;
+  width: 100%;
+}
+a button {
+  margin-bottom: 20px;
+}
+.btn-primary {
+  background-color: #005d40 !important;
+}
+.btn-primary:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 1200px) {
+  .choose_floor {
+    display: none;
+  }
+  .choose_floor1 {
+    display: block;
+    height: auto;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,131 @@
+.Photos .container .row {
+  justify-content: space-evenly;
+}
+.Photos .container .row img {
+  margin-bottom: 20px;
+  height: 200px;
+  width: 300px;
+}
+.Photos .container .row img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+@media screen and (max-width: 1200px) {
+  .Photos .container .row {
+    justify-content: center;
+  }
+  #about_us {
+    margin-top: -250px !important;
+  }
+}
+
+.carousel {
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .main_photo {
+    margin-top: 0;
+  }
+}
+#advantages {
+  padding-top: 30px;
+  overflow: hidden;
+
+}
+
+.feature {
+  margin-bottom: 30px;
+}
+
+.feature__icon {
+  font-size: 50px;
+  margin-right: 37px;
+  color: #000;
+}
+
+.feature__text {
+  color: #898989;
+}
+.feature__title {
+  color: #7b4404;
+}
+
+.gallery {
+  height: 100vh;
+  }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.Adv_icons {
+  height: 64px;
+  width: 64px;
+  margin-right: 18px;
+}
+#about_us {
+  margin-top: 250px;
+  overflow: hidden;
+}
+.jumbotron {
+  background-color: white;
+  text-align: center;
+  box-shadow: none;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+}

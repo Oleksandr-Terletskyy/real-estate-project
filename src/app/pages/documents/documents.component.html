@@ -1,0 +1,78 @@
+<section class="documents">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">
+                            <a data-fancybox data-type="iframe"
+                                data-src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/1.pdf?alt=media&token=a3efe516-54be-431e-8451-665332312941">
+                                Link to document#1</a>
+                        </h1>
+                        <p class="lead">Short description of document and Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iure corrupti unde dicta, sapiente quod odit maxime officiis? Praesentium
+                            autem earum officiis quam, ducimus quia dolore, illum, repudiandae quidem minima
+                            reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">
+                            <a data-fancybox data-type="iframe"
+                                data-src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/2.pdf?alt=media&token=ab5c5584-736c-4be0-8c41-dfd1617160e4">
+                                Link to document#2</a>
+                        </h1>
+                        <p class="lead">Short description of document and Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iure corrupti unde dicta, sapiente quod odit maxime officiis? Praesentium
+                            autem earum officiis quam, ducimus quia dolore, illum, repudiandae quidem minima
+                            reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">
+                            <a data-fancybox data-type="iframe"
+                                data-src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/3.pdf?alt=media&token=e0fe3124-8b16-49ce-9150-fb28719ecf0f">
+                                Link to document#3</a>
+                        </h1>
+                        <p class="lead">Short description of document and Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iure corrupti unde dicta, sapiente quod odit maxime officiis? Praesentium
+                            autem earum officiis quam, ducimus quia dolore, illum, repudiandae quidem minima
+                            reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">
+                            <a data-fancybox data-type="iframe"
+                                data-src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/4.pdf?alt=media&token=47feb892-0f43-49a2-9b9a-c6a1dc5e11e0">
+                                Link to document#4</a>
+                        </h1>
+                        <p class="lead">Short description of document and Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Iure corrupti unde dicta, sapiente quod odit maxime officiis? Praesentium
+                            autem earum officiis quam, ducimus quia dolore, illum, repudiandae quidem minima
+                            reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngFor="let doc of document" class="col-lg-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">
+                                <a data-fancybox data-type="iframe"
+                                [href]="doc.pdf">
+                                    {{doc.title}}</a>
+                            </h1>
+                            <p class="lead">{{doc.description}}</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>

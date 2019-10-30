@@ -1,0 +1,43 @@
+<section class="choose_floor">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">
+                <div class="map">
+                    <svg width="0" height="0">
+                        <polygon [routerLink]="[ '/first_floor'  ]" points="65 548,1029 545,1018 402,68 411"></polygon>
+                        <polygon [routerLink]="[ '/second_floor'  ]"
+                            points="1018 410,1015 286,72 292,90 320,82 414,68 415"></polygon>
+                        <polygon [routerLink]="[ '/third_floor'  ]"
+                            points="92 204,82 186,1048 181,1010 214,1015 286,88 295"></polygon>
+                        <polygon [routerLink]="[ '/fourth_floor'  ]"
+                            points="953 132,947 48,318 57,317 76,155 76,167 95,167 116,173 122,175 141"></polygon>
+                    </svg>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/images%2FZaliznaVoda-2.jpg?alt=media&token=ab5493b7-c7fc-4e25-9347-23736ae7d07b"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="choose_floor1">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12">
+                <a [routerLink]="[ '/first_floor'  ]">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">First floor</button>
+                </a>
+                <a [routerLink]="[ '/second_floor'  ]">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Second floor</button>
+                </a>
+                <a [routerLink]="[ '/third_floor'  ]">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Third floor</button>
+                </a>
+                <a [routerLink]="[ '/fourth_floor'  ]">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Fourth floor</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<router-outlet></router-outlet>

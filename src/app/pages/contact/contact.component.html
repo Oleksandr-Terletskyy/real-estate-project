@@ -1,0 +1,73 @@
+<section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-heading">
+                        <h6>Contact info</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="content-sidebar">
+                        <div class="weekly-office-hours">
+                            <ul>
+                                <li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span>
+                                    <span>09 AM - 19 PM</span></li>
+                                <li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09
+                                        AM - 14 PM</span></li>
+                                <li class="d-flex align-items-center justify-content-between"><span>Sunday</span>
+                                    <span>Closed</span></li>
+                            </ul>
+                        </div>
+                        <div class="address mt-30">
+                            <h6><img src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/phone-call.png?alt=media&token=a915b747-1acd-499c-a980-dbf4e8597d6d"
+                                    alt=""> +45 677 8993000 223</h6>
+                            <h6><img src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/envelope.png?alt=media&token=12c472ef-ab62-44a0-b7e0-ddf6cfbdbd25"
+                                    alt=""> office@template.com</h6>
+                            <h6><img src="https://firebasestorage.googleapis.com/v0/b/real-estate-88723.appspot.com/o/location.png?alt=media&token=b5506b85-319c-43ce-890d-50c4d65a7b3f"
+                                    alt=""> Main Str. no 45-46, b3, 56832,<br>Los Angeles, CA</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="contact-form">
+                        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" action="#" method="post" >
+                            <div class="form-group">
+                                <input #date="ngModel" [(ngModel)]="formData.name" name="name"  type="text" class="form-control" id="contact-name"
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input #date="ngModel" [(ngModel)]="formData.phone" name="phone" type="number" class="form-control"
+                                    id="contact-number" placeholder="Your Phone">
+                            </div>
+                            <div class="form-group">
+                                <input #date="ngModel" [(ngModel)]="formData.email" name="email"  type="email" class="form-control"  id="contact-email"
+                                    placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea #text="ngModel" [(ngModel)]="formData.message" name="message"  class="form-control"  id="message" cols="30"
+                                    rows="10" placeholder="Your Message"></textarea>
+                            </div>
+                            <button  type="submit" class="btn south-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

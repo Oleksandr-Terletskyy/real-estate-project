@@ -1,0 +1,141 @@
+header {
+  width: 100%;
+  height: 100px;
+  background: #005d40;
+  padding: 0 20px;
+  color: white;
+  z-index: 500;
+}
+
+.navclick1 {
+  width: 100%;
+  height: 100px;
+  background: red !important;
+  padding: 0 20px;
+  color: white;
+  z-index: 500;
+}
+.logo {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.logo:hover {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.logo1 {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+  margin-top: 10px;
+  display: none;
+}
+.menu {
+  float: right;
+  line-height: 100px;
+}
+.menu a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: 15px;
+  display: inline-block;
+  outline: none;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+  padding-bottom: 5px;
+}
+.menu a:after {
+  background-color: #7b4404;
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.menu a:hover:after,
+.menu a:focus:after {
+  width: 100%;
+}
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn {
+  float: right;
+}
+.show-menu-btn i {
+  line-height: 100px;
+}
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.content {
+  padding: 0 20px;
+}
+.content img {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p {
+  text-align: justify;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    background: #005d40;
+  }
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #005d40;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+  }
+
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    position: relative;
+  }
+}
+
+.transparent {
+  position: fixed;
+}

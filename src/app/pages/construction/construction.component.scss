@@ -1,0 +1,14 @@
+#Const_progress {
+  min-height: 100vh;
+  margin-top: 50px;
+}
+.card {
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .col-lg-4 {
+    display: flex;
+    justify-content: center;
+  }
+}

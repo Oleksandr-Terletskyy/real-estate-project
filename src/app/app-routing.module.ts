@@ -19,10 +19,6 @@ import { AdminConstructionComponent } from './admin/admin-construction/admin-con
 import { AdminDocumentationComponent } from './admin/admin-documentation/admin-documentation.component';
 import { AdminContactsComponent } from './admin/admin-contacts/admin-contacts.component';
 
-
-
-
-
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
